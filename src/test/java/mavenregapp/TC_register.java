@@ -15,7 +15,8 @@ public class TC_register {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver= new ChromeDriver();
 	
-	driver.get("http://localhost:8084/mavenregapp");
+	driver.get("http://localhost:8084/mavenregapp"); 
+	
 	driver.manage().window().maximize();
 	
 	driver.findElement(By.id("name")).sendKeys("bnnk");
@@ -25,5 +26,5 @@ public class TC_register {
 	Assert.assertEquals(driver.getTitle(),"REGISTRATION SUCCESS");
 	driver.close();
 	}
-}
+} 
 
